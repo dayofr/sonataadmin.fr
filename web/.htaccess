@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    <IfModule mod_vhost_alias.c>
+        RewriteBase /web
+    </IfModule>
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ app_dev.php [QSA,L]
+</IfModule>

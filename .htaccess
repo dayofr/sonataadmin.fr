@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sonataadmin\.fr\.dev$ [OR]
+RewriteCond %{HTTP_HOST} ^sonataadmin\.fr\.dev$
+RewriteCond %{REQUEST_URI} !^/web/
+RewriteRule (.*) /web/$1
+</IfModule>
