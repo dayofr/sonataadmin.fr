@@ -2,7 +2,7 @@
     RewriteEngine On
 
     <IfModule mod_vhost_alias.c>
-        RewriteBase /web
+        RewriteBase /
     </IfModule>
 
     RewriteCond %{REQUEST_FILENAME} !-f

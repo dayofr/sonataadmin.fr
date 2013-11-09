@@ -4,7 +4,7 @@ parameters:
     database_port:     ~
     database_name:     sonataadmin
     database_user:     root
-    database_password: aurelien
+    database_password: vagrant
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
