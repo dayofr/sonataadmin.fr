@@ -1,8 +1,8 @@
 #!/bin/sh
 
-php="5.4.21"
-apache="2.2.25"
-phpmyadmin="4.0.8"
+php="5.4.23"
+apache="2.2.26"
+phpmyadmin="4.1.2"
 httpdconf="/opt/app/httpd/$apache/conf/httpd.conf"
 phpini="/opt/app/httpd/$apache/php/$php/lib/php.ini"
 
@@ -16,7 +16,7 @@ gem install capifony
 
 mkdir /opt/app
 mkdir /opt/app/httpd
-wget http://apache.mirrors.multidist.eu/httpd/httpd-$apache.tar.gz
+wget http://archive.apache.org/dist/httpd/httpd-$apache.tar.gz
 tar -xzf httpd-$apache.tar.gz
 cd httpd-$apache
 ./configure --prefix=/opt/app/httpd/$apache --enable-proxy --enable-ssl --enable-headers --enable-expires --enable-deflate --enable-rewrite --enable-unique-id --with-pcre=/usr/bin/pcre-config --disable-autoindex --disable-cgi --disable-status --disable-userdir --disable-version --enable-vhost-alias
