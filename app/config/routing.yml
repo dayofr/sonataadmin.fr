@@ -32,4 +32,4 @@ _sonata_admin:
  
 # error-prevention
 homepage:
- pattern: /
+    pattern: /
